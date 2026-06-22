@@ -42,3 +42,28 @@ nav a{
     color: white;
     margin-top: 20px;
 }
+
+/* Sticky Footer */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* এইটা content এরিয়াকে বড় করে footer নিচে ঠেলে দিবে */
+}
+
+footer {
+  margin-top: auto; /* footer কে সবসময় নিচে রাখবে */
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
