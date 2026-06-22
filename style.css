@@ -106,3 +106,46 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+/* Neumorphism Navbar */
+.navbar {
+  background: #e0e5ec !important; /* কালো বাদ */
+  box-shadow: 8px 8px 16px #a3b1c6, -8px -8px 16px #ffffff;
+  padding: 1rem 0;
+  border-radius: 0 0 25px 25px; /* নিচে হালকা গোল */
+}
+
+.navbar-brand {
+  color: #4a4f5c !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+  color: #6d7587 !important;
+  font-weight: 500;
+  margin: 0 8px;
+  padding: 8px 16px !important;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+/* Hover + Active effect */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  box-shadow: inset 4px 4px 8px #a3b1c6, inset -4px -4px 8px #ffffff;
+  color: #4a4f5c !important;
+}
+
+/* Mobile 3dot icon color */
+.navbar-toggler {
+  border: none;
+  box-shadow: 4px 4px 8px #a3b1c6, -4px -4px 8px #ffffff;
+  border-radius: 10px;
+}
+.navbar-toggler:focus {
+  box-shadow: inset 2px 2px 5px #a3b1c6, inset -2px -2px 5px #ffffff;
+}
+.navbar-toggler-icon {
+  filter: invert(40%) sepia(10%) saturate(500%) hue-rotate(180deg); /* কালো icon কে gray বানাবে */
+}
